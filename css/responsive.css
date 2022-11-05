@@ -1,0 +1,19 @@
+@media only screen and (min-width: 540px){
+    .mobile-header .supertoys-logo{width: 90%;}
+    .mobile-header .search-input{width: 70%;}
+}
+@media only screen and (min-width: 768px){
+    .mobile-header .supertoys-logo{width: 80%;}
+    .mobile-header .search-input{width: 60%;}
+}
+@media only screen and (min-width:1200px){
+    .bottom-navbar-col img{padding: 0 10px;}
+    .bottom-navbar-col a{font-size: var(--fs-5);}
+}
+@media only screen and (min-width:1400px){
+    .bottom-navbar-col img{padding: 0 15px;}
+    .bottom-navbar-col a{font-size: var(--fs-6);}
+}
+@media only screen and (min-width:1800px){
+    .bottom-navbar-col a{font-size: var(--fs-9);}
+}
