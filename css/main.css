@@ -50,6 +50,18 @@
     --fs-9: 26px;
 }
 
+/*ANIMATIONS*/
+@-webkit-keyframes pulse-purple {
+    0% {box-shadow: 0 0 0 0 var(--design-color-4);}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+@keyframes pulse-purple {
+    0% {box-shadow: 0 0 0 0 var(--design-color-4);}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+
 /*-----------BASIC--------------*/
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{font-family: 'Montserrat', sans-serif;}
@@ -293,3 +305,68 @@ a, button, div, span, p, i{
 .bottom-navbar-col.gift-col a{
     color: var(--black-8);
 }
+
+
+/*---------FOOTER---------*/
+
+footer{background-color: var(--bg-color-3);}
+footer .footer-top{padding: 40px 0;width: 100%; display: flex;justify-content: center;}
+footer .supertoys-logo{width: 80%; padding: 20px 0;}
+footer .footer-links{padding: 15px 0;}
+footer .footer-links h4{
+    color: var(--text-color-4);
+    font-weight: 700;
+}
+footer .footer-links a{
+    color: var(--black-8);
+    font-weight: 500;
+    margin: 5px 0;
+    font-size: var(--font-size-md);
+    position: relative;
+}
+footer .footer-links a:hover{color: var(--text-color-1);}
+footer .footer-links a::after{background-color: var(--bg-color-1);}
+footer .footer-links a:hover::after{transform: scaleX(1);}
+footer .sosial-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sosial-icons{display: flex;}
+.sosial-icons a{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-6);
+    color: var(--black-8);
+}
+.sosial-icons a::after{
+    display: none;
+}
+.sosial-icons a:hover{
+    background-color: var(--bg-color-4);
+    animation: pulse-purple 1s ease infinite;
+}
+.sosial-icons a:hover i{color: var(--text-color-5);}
+footer .footer-bottom{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-4);
+    color: var(--text-color-5);
+    font-size: var(--fs-5);
+    text-align: center;
+    font-weight: 500;
+}
+footer .footer-bottom p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-bottom p span{padding: 5px;}

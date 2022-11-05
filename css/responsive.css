@@ -1,10 +1,16 @@
 @media only screen and (min-width: 540px){
     .mobile-header .supertoys-logo{width: 90%;}
     .mobile-header .search-input{width: 70%;}
+    footer .supertoys-logo{width: 70%;}
 }
 @media only screen and (min-width: 768px){
     .mobile-header .supertoys-logo{width: 80%;}
     .mobile-header .search-input{width: 60%;}
+    footer .supertoys-logo{width: 50%;}
+    footer .footer-bottom p{flex-direction: row;}
+}
+@media only screen and (min-width: 992px){
+    footer .supertoys-logo{width: 95%;}
 }
 @media only screen and (min-width:1200px){
     .bottom-navbar-col img{padding: 0 10px;}
