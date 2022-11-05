@@ -115,8 +115,75 @@ a, button, div, span, p, i{
     font-size: 20px;
     z-index: 99;
 }
+section{width: 100%;margin: 50px 0;}
+.hover-absolute-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+  font-size: var(--fs-4);
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev i,
+.swiper-button-next i{
+    color: var(--text-color-5);
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 1;
+}
 
-
+.section-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.section-heading h1{
+    color: var(--text-color-5);
+    text-align: center;
+    padding: 5px 0;
+}
+.section-heading .section-heading-design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-heading .section-heading-design .line{
+    width: 70px;
+    height: 2px;
+    background-color: var(--text-color-5);
+    margin: 0 7px;
+}
 
 
 /*------------HEADER----------*/
@@ -370,3 +437,61 @@ footer .footer-bottom p{
     align-items: center;
 }
 footer .footer-bottom p span{padding: 5px;}
+
+
+/*---------SUPERTOYS MAIN PAGE----------*/
+/*MAIN-SWIPER*/
+.main-swiper-section{margin: 0;}
+.main-swiper{width: 100%;}
+.main-swiper .swiper-slide{width: 100%;position: relative;}
+.main-swiper .swiper-slide .hover-absolute-div{background-color: var(--black-5);}
+.main-swiper .swiper-slide .swiper-image{width: 100%;}
+.main-swiper .swiper-slide .swiper-image img{width: 100%; object-fit: cover;}
+.main-swiper .swiper-button-prev,
+.main-swiper .swiper-button-next{
+    background-color: var(--bg-color-3);
+    color: var(--text-color-5);
+}
+.main-swiper .swiper-button-prev:hover,
+.main-swiper .swiper-button-next:hover{
+    background-color: var(--bg-color-4);
+}
+.main-swiper .swiper-pagination-bullet {
+    background-color: var(--bg-color-3);
+}
+.main-swiper .swiper-pagination-bullet-active {
+    background: var(--bg-color-1);
+    transform: scale(1.2);
+}
+
+/*CHILD AGE SWIPER*/
+.child-age-swiper{padding: 30px 0;}
+.child-age-flower{position: relative;}
+.child-age-flower .hover-absolute-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child-age-flower .hover-absolute-div span{
+    color: var(--text-color-8);
+    padding: 3px 0;
+}
+
+/*NEW PRODUCTS SECTION*/
+.new-products-section{
+    position: relative;
+    height: 800px;
+}
+.new-products-section .hover-absolute-div{
+    background-color: var(--bg-color-4);
+    z-index: -1;
+}
+.white-toy-design{position: absolute; width: 60px; height: 60px;object-fit: contain;}
+.white-toy-design:nth-of-type(1){top: 0; left: 5%;}
+.white-toy-design:nth-of-type(2){top: 0; right: 5%;}
+.white-toy-design:nth-of-type(3){top: 50%; right: 5%;}
+.white-toy-design:nth-of-type(4){top: 0; left: 30%;}
+.white-toy-design:nth-of-type(5){bottom: 10%; right: 20%;}
+.white-toy-design:nth-of-type(6){top: 0; right: 20%;}
+
