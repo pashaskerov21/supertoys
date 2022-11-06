@@ -481,17 +481,31 @@ footer .footer-bottom p span{padding: 5px;}
 /*NEW PRODUCTS SECTION*/
 .new-products-section{
     position: relative;
-    height: 800px;
+}
+.white-toy-design-bg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-4);
+}
+.design-image-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.white-toy-design{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 .new-products-section .hover-absolute-div{
-    background-color: var(--bg-color-4);
-    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.white-toy-design{position: absolute; width: 60px; height: 60px;object-fit: contain;}
-.white-toy-design:nth-of-type(1){top: 0; left: 5%;}
-.white-toy-design:nth-of-type(2){top: 0; right: 5%;}
-.white-toy-design:nth-of-type(3){top: 50%; right: 5%;}
-.white-toy-design:nth-of-type(4){top: 0; left: 30%;}
-.white-toy-design:nth-of-type(5){bottom: 10%; right: 20%;}
-.white-toy-design:nth-of-type(6){top: 0; right: 20%;}
 
