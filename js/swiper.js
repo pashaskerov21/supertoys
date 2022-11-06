@@ -29,3 +29,19 @@ const swiper2 = new Swiper(".child-age-swiper", {
       1300: {slidesPerView: 7,spaceBetween: 10},
       },
   });
+  
+  const swiper3 = new Swiper(".new-products-swiper", {
+    autoplay: {
+    delay: 9000,
+    },
+    loop: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    
+  });
