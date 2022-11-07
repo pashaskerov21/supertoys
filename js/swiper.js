@@ -43,5 +43,25 @@ const swiper2 = new Swiper(".child-age-swiper", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     },
-    
+  });
+
+  const swiper4 = new Swiper(".kampaniya-products-swiper", {
+    autoplay: {
+    delay: 5000,
+    },
+    loop: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      768: {slidesPerView: 2,spaceBetween: 10},
+      992: {slidesPerView: 3,spaceBetween: 10},
+      },
   });
