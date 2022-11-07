@@ -1,11 +1,17 @@
 @media only screen and (min-width: 360px){
     .supertoys-product-card{width: 70%;}
+    .teklif-section .hover-absolute-div .toys-panel{width: 90%;}
 }
 @media only screen and (min-width: 540px){
     .mobile-header .supertoys-logo{width: 90%;}
     .mobile-header .search-input{width: 70%;}
     footer .supertoys-logo{width: 70%;}
     .supertoys-product-card{width: 60%;}
+    .teklif-section .hover-absolute-div .toys-panel img{width: 70px;height: 70px;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(2){left: 5%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(3){left: 5%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(6){right: 5%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(7){right: 5%;}
 }
 @media only screen and (min-width: 768px){
     .mobile-header .supertoys-logo{width: 80%;}
@@ -22,10 +28,24 @@
     .swiper-button-prev, .swiper-button-next{width: 50px;height: 50px;font-size: var(--fs-7);}
     .swiper-pagination-bullet{width: 15px; height: 15px;}
     .white-toy-design{width: auto; height: auto;}
+    .teklif-section .hover-absolute-div .toys-panel img{width: 90px;height: 90px;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(3){left: 15%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(4){top: 60%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(5){right: 10%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(6){top: 40%;right: 20%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(7){top: 40%;right: 0;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(8){right: 10%;}
+
 }
 @media only screen and (min-width:1200px){
     .bottom-navbar-col img{padding: 0 10px;}
     .bottom-navbar-col a{font-size: var(--fs-5);}
+    .teklif-section .content{padding: 50px 0;}
+    .teklif-section .hover-absolute-div .toys-panel img{width: auto;height: auto;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(1){top: 5%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(2){left: 15%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(3){left: 27%;}
+    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(4){top: 50%; left: 5%;}
 }
 @media only screen and (min-width:1400px){
     .bottom-navbar-col img{padding: 0 15px;}
