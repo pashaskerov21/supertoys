@@ -192,7 +192,6 @@ section{width: 100%;margin: 50px 0;}
     padding: 40px 0;
 }
 .section-heading h1{
-    color: var(--text-color-5);
     text-align: center;
     padding: 5px 0;
 }
@@ -204,9 +203,105 @@ section{width: 100%;margin: 50px 0;}
 .section-heading .section-heading-design .line{
     width: 70px;
     height: 2px;
-    background-color: var(--text-color-5);
     margin: 0 7px;
 }
+/*--------SUPERTOYS PRODUCT CARD ----------*/
+.products-wrapper{
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.product-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.product-card{
+    background-color: var(--bg-color-5);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+.product-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-image img{
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain;
+}
+.product-name{
+    padding:5px 0;
+    font-weight: 700;
+    text-align: center;
+}
+.product-price{
+    color: var(--text-color-2);
+    padding:5px 0;
+    font-weight: 700;
+}
+.product-stars{
+    padding:5px 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.product-stars button{margin: 0 3px;}
+.sebet-button{
+    width: 90%;
+    background-color: var(--bg-color-2);
+    color: var(--text-color-5);
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.sebet-button:hover{animation: pulse-red 1s ease infinite;}
+.sebet-button img{margin-right: 10px;}
+.sebet-button.active{
+    background-color: #4BB543;
+    animation: none;
+}
+.sebet-button.active span{display: none;}
+.card-absolute-buttons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-70px);
+}
+.product-card:hover .card-absolute-buttons{animation: show-card-buttons 0.5s ease forwards;}
+.card-absolute-buttons button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.card-absolute-buttons button:nth-of-type(1){
+    background-color: var(--bg-color-4);
+    color: var(--text-color-5);
+    font-size: var(--fs-6);  
+}
+.card-absolute-buttons button:nth-of-type(2){background-color: var(--bg-color-3);}
+.card-absolute-buttons button:nth-of-type(3){background-color: var(--bg-color-1);}
+.card-absolute-buttons button:nth-of-type(1):hover{animation: pulse-purple 1s ease infinite;}
+.card-absolute-buttons button:nth-of-type(2):hover{animation: pulse-yellow 1s ease infinite;}
+.card-absolute-buttons button:nth-of-type(3):hover{animation: pulse-red 1s ease infinite;}
+
+
 
 
 /*------------HEADER----------*/
@@ -333,8 +428,8 @@ section{width: 100%;margin: 50px 0;}
     background-color: var(--bg-color-1);
     border-right: 2px solid var(--design-color-5);
 }
-.bottom-navbar-col img{padding: 0 5p}
-.bottom-navbar-col a{color: var(--ext-color-5);font-size: var(--fs-4);}
+.bottom-navbar-col img{padding: 0 5px}
+.bottom-navbar-col a{color: var(--text-color-5);font-size: var(--fs-4);}
 .bottom-navbar-col.gift-col{background-color: var(--bg-color-3);border-right: none;}
 .bottom-navbar-col.gift-col a{color: var(--black-8);}
 
@@ -424,6 +519,9 @@ footer .footer-bottom p span{padding: 5px;}
     position: relative;
     margin-bottom: 0;
 }
+.new-products-section .section-heading{padding-bottom: 0;}
+.new-products-section .section-heading h1{color: var(--text-color-5);}
+.new-products-section .section-heading-design .line{background-color: var(--bg-color-5);}
 /*DESIGN BACKGROUND*/
 .new-products-section .hover-absolute-div{
     z-index: -1;
@@ -441,13 +539,15 @@ footer .footer-bottom p span{padding: 5px;}
     padding: 10px 0;
 }
 /*NEW PRODUCT SWIPER*/
-.new-products-swiper{width: 100%;padding: 0 0 35px;}
+.new-products-swiper{width: 100%;padding: 35px 0;}
 .new-products-swiper .swiper-button-prev,
 .new-products-swiper .swiper-button-next{
     background-color: var(--bg-color-3);
     color: var(--text-color-5);
     margin: 0;
 }
+.new-products-swiper .swiper-button-prev{margin-left: -10px;}
+.new-products-swiper .swiper-button-next{margin-right: -10px;}
 .new-products-swiper .swiper-button-prev:hover,
 .new-products-swiper .swiper-button-next:hover{
     background-color: var(--bg-color-1);
@@ -460,70 +560,14 @@ footer .footer-bottom p span{padding: 5px;}
     background: var(--bg-color-1);
     transform: scale(1.2);
 }
-/*PRODUCT CARDS*/
-.products-wrapper{width: 90%; display: flex;justify-content: center; align-items: center;}
-.product-col{display: flex;justify-content: center; align-items: center; margin: 10px 0;}
-.supertoys-product-card{
-    width: 85%;
-    background-color: var(--bg-color-5);
-    padding: 15px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    position: relative;
-    cursor: pointer;
-}
-.supertoys-product-card:hover{box-shadow: 0 0 10px var(--design-color-5);transform: scale(1.01);}
-.product-image img{width: 120px; height: 120px;}
-.product-name{padding:7px 0;text-align: center;}
-.product-price{color: var(--text-color-2);padding:5px 0;font-size: var(--fs-6); font-weight: 700;}
-.product-stars{padding:5px 0;display: flex; justify-content: center; align-items: center;}
-.product-stars button{margin: 0 5px;}
-.sebet-button{
-    width: 80%;
-    background-color: var(--bg-color-2);
-    color: var(--text-color-5);
-    padding: 15px 0;
-    margin: 15px 0;
-}
-.sebet-button:hover{animation: pulse-red 1s ease infinite;}
-.sebet-button img{margin-right: 10px;}
-.sebet-button.active{
-    background-color: #4BB543;
-    animation: none;
-}
-.sebet-button.active img{transform: scale(1.1);}
-.sebet-button.active span{display: none;}
-.card-absolute-buttons{
-    position: absolute;
-    top: 5px;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(-70px);
-}
-.supertoys-product-card:hover .card-absolute-buttons{animation: show-card-buttons 0.5s ease forwards;}
-.card-absolute-buttons button{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin: 10px ;
-}
-.card-absolute-buttons button:nth-of-type(1){
-    background-color: var(--bg-color-4);
-    color: var(--text-color-5);
-    font-size: var(--fs-6);  
-}
-.card-absolute-buttons button:nth-of-type(2){background-color: var(--bg-color-3);}
-.card-absolute-buttons button:nth-of-type(3){background-color: var(--bg-color-1);}
-.card-absolute-buttons button:nth-of-type(1):hover{animation: pulse-purple 1s ease infinite;}
-.card-absolute-buttons button:nth-of-type(2):hover{animation: pulse-yellow 1s ease infinite;}
-.card-absolute-buttons button:nth-of-type(3):hover{animation: pulse-red 1s ease infinite;}
+/*NEW PRODUCT CARDS*/
+.products-wrapper.new{width: 90%;}
+.product-col.new{margin: 10px 0;}
+.product-card.new{width: 80%;}
+.product-card.new .product-image img{width: 130px; height: 130px;}
+.product-card.new .product-name{font-size: var(--fs-8);}
+.product-card.new .product-price{font-size: var(--fs-8);}
+.product-card.new .sebet-button{padding: 15px 0;}
 
 
 /*TEKLİF SECTİON*/
@@ -564,7 +608,25 @@ footer .footer-bottom p span{padding: 5px;}
 .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(5){top: 0;right: 0;}
 .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(6){top: 25%;right: 0;}
 .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(7){top: 50%;right: 0;}
-.teklif-section .hover-absolute-div .toys-panel img:nth-of-type(8){bottom: -10px;right: 0;}
+.teklif-section .hover-absolute-div .toys-panel img:nth-of-type(8){bottom: 0;right: 0;}
 
-
+/*SEZON PRODUCTS SECTION*/
+.sezon-products-section{width: 100%;}
+.sezon-products-section .section-heading h1{color: var(--text-color-8);}
+.sezon-products-section .section-heading-design .line{background-color: var(--bg-color-1);}
+/*SEZON LG PRODUCT CARD*/
+.product-card.sezon-lg{justify-content: space-evenly; background-color: var(--bg-color-6);width: 95%;align-self: stretch;margin: 10px 0;}
+.product-card.sezon-lg .product-image img{width: 170px;height: 170px;}
+.product-card.sezon-lg .product-name{font-size: var(--fs-8);}
+.product-card.sezon-lg .product-price{font-size: var(--fs-8);}
+.product-card.sezon-lg .sebet-button{padding: 15px 0;margin: 15px 0;}
+/*SEZON SM PRODUCT CARD*/
+.product-card.sezon-sm{border: 1px solid var(--black-3); width: 95%;margin: 5px 0;}
+.product-card.sezon-sm .product-image img{width: 60px;height: 60px;}
+.product-card.sezon-sm .product-stars button{margin:0 2px;}
+.product-card.sezon-sm .product-stars button img{transform: scale(0.8);}
+.product-card.sezon-sm .sebet-button span{font-size: var(--fs-2);}
+.product-card.sezon-sm .card-absolute-buttons button{width: 30px; height: 30px;}
+.product-card.sezon-sm .card-absolute-buttons button i,
+.product-card.sezon-sm .card-absolute-buttons button img{transform: scale(0.7);}
 
