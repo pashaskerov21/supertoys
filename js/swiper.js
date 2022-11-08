@@ -65,3 +65,32 @@ const swiper2 = new Swiper(".child-age-swiper", {
       992: {slidesPerView: 3,spaceBetween: 10},
       },
   });
+
+  const swiper5 = new Swiper(".brands-swiper", {
+    autoplay: {
+    delay: 5000,
+    },
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      540: {slidesPerView: 2,spaceBetween: 10},
+      768: {slidesPerView: 3,spaceBetween: 10},
+      992: {slidesPerView: 4,spaceBetween: 10},
+      1200: {slidesPerView: 5,spaceBetween: 10},
+      },
+  });
+  const swiper6 = new Swiper(".insta-image-swiper", {
+    autoplay: {
+    delay: 5000,
+    },
+    loop: true,
+    slidesPerView: 1,
+    
+    breakpoints: {
+      540: {slidesPerView: 2},
+      768: {slidesPerView: 3},
+      992: {slidesPerView: 4},
+      1200: {slidesPerView: 5},
+      },
+  });

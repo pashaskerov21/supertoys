@@ -153,7 +153,7 @@ a, button, div, span, p, i{
     font-size: 20px;
     z-index: 99;
 }
-section{width: 100%;margin: 50px 0;}
+section{width: 100%;margin: 50px 0; padding: 40px 0;}
 .hover-absolute-div{
     position: absolute;
     top: 0;
@@ -204,7 +204,7 @@ section{width: 100%;margin: 50px 0;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 .section-heading h1{
     text-align: center;
@@ -508,7 +508,7 @@ footer .footer-bottom p span{padding: 5px;}
 
 /*---------SUPERTOYS MAIN PAGE----------*/
 /*MAIN-SWIPER*/
-.main-swiper-section{margin: 0;}
+.main-swiper-section{margin: 0;padding: 0;}
 .main-swiper{width: 100%;}
 .main-swiper .swiper-slide{width: 100%;position: relative;}
 .main-swiper .swiper-slide .hover-absolute-div{background-color: var(--black-5);}
@@ -530,10 +530,8 @@ footer .footer-bottom p span{padding: 5px;}
 
 /*NEW PRODUCTS SECTION*/
 .new-products-section{
-    width: 100%;
-    padding: 30px 0;
     position: relative;
-    margin-bottom: 0;
+    padding: 60px 0 80px;
 }
 .new-products-section .section-heading{padding-bottom: 0;}
 .new-products-section .section-heading h1{color: var(--text-color-5);}
@@ -588,13 +586,10 @@ footer .footer-bottom p span{padding: 5px;}
 
 /*TEKLİF SECTİON*/
 .teklif-section{
-    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
-    margin: 0;
 }
 .teklif-section .content{
     display: flex;
@@ -627,7 +622,6 @@ footer .footer-bottom p span{padding: 5px;}
 .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(8){bottom: 0;right: 0;}
 
 /*SEZON PRODUCTS SECTION*/
-.sezon-products-section{width: 100%;}
 .sezon-products-section .section-heading h1{color: var(--text-color-8);}
 .sezon-products-section .section-heading-design .line{background-color: var(--bg-color-1);}
 /*SEZON LG PRODUCT CARD*/
@@ -648,7 +642,7 @@ footer .footer-bottom p span{padding: 5px;}
 
 
 /*XUSUSİ TEKLİFLER SECTION*/
-.special-product-section{width: 100%; position: relative;}
+.special-product-section{position: relative;}
 .special-product-section .section-heading h1{color: var(--text-color-8);}
 .special-product-section .section-heading-design .line{background-color: var(--bg-color-1);}
 /*SPECIAL LG PRODUCT CARD*/
@@ -689,7 +683,7 @@ footer .footer-bottom p span{padding: 5px;}
 .special-product-section .hover-absolute-div img:nth-of-type(2){top: -45%;right: 0;}
 
 /*KAMPANİYA PRODUCTS SECTİON*/
-.kampaniya-products-section{width: 100%;position: relative; padding: 30px 0; margin-bottom: 0;}
+.kampaniya-products-section{position: relative;margin-bottom: 0;}
 .kampaniya-products-section .section-heading{padding: 0;}
 .kampaniya-products-section .section-heading h1{color: var(--text-color-5);}
 .kampaniya-products-section .section-heading-design .line{background-color: var(--bg-color-5);}
@@ -778,7 +772,6 @@ footer .footer-bottom p span{padding: 5px;}
 }
 
 /*FİNİSHED PRODUCTS SECTİON*/
-
 .finished-products-section .section-heading h1{color: var(--text-color-8);}
 .finished-products-section .section-heading-design .line{background-color: var(--bg-color-1);}
 
@@ -803,3 +796,68 @@ footer .footer-bottom p span{padding: 5px;}
 }
 .product-card.finish-sm .right .product-stars button{margin: 0;}
 .product-card.finish-sm .right .product-stars button img{transform: scale(0.7);}
+
+/*B SECTİON*/
+.brands-section{background-color: var(--bg-color-7); margin-bottom: 10px;}
+.brands-section .section-heading h1{color: var(--text-color-8);}
+.brands-section .section-heading-design .line{background-color: var(--bg-color-1);}
+.brands-swiper{width: 100%;}
+.brand-image{width: 90%; display: flex; justify-content: center;}
+
+/*İNSTAGRAM*/
+.instagram{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.insta-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;  
+}
+.insta-button i{
+    font-size: var(--fs-9);
+    color: var(--text-color-5);
+}
+.instagram .insta-button{
+    background-color: var(--bg-color-3);
+}
+.instagram .insta-button:hover{
+    background-color: var(--bg-color-4);
+    transform: scale(1.2);
+    animation: pulse-purple 1s ease infinite;
+}
+.instagram span{
+    font-size: var(--fs-5);
+    font-weight: 500;
+}
+
+/*INSTAGRAM IMAGE SWIPER*/
+.insta-image-section{margin: 0;}
+.insta-image-swiper{width: 100%;}
+.insta-image-swiper .insta-image{width: 100%;display: flex; justify-content: center; align-items: center;}
+.insta-image-swiper .insta-image img{width: 100%;max-width: 280px;max-height: 300px; object-fit: contain;}
+.insta-image-swiper .hover-absolute-div{
+    background-color: var(--black-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.insta-image-swiper .hover-absolute-div .insta-button{
+    transform: scale(0);
+}
+
+.insta-image-swiper .swiper-slide:hover .hover-absolute-div{
+    opacity: 1;
+}
+.insta-image-swiper .swiper-slide:hover .hover-absolute-div .insta-button{
+    transform: scale(1.3);
+}
