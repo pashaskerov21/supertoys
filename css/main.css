@@ -842,7 +842,7 @@ footer .footer-bottom p span{padding: 5px;}
 /*INSTAGRAM IMAGE SWIPER*/
 .insta-image-section{margin: 0;}
 .insta-image-swiper{width: 100%;}
-.insta-image-swiper .insta-image{width: 100%;display: flex; justify-content: center; align-items: center;}
+.insta-image-swiper .insta-image{position: relative; display: flex; justify-content: center; align-items: center;}
 .insta-image-swiper .insta-image img{width: 100%;max-width: 280px;max-height: 300px; object-fit: contain;}
 .insta-image-swiper .hover-absolute-div{
     background-color: var(--black-5);
