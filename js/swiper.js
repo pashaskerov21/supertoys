@@ -94,3 +94,14 @@ const swiper2 = new Swiper(".child-age-swiper", {
       1200: {slidesPerView: 5},
       },
   });
+
+  const swiper7 = new Swiper(".recommended-products-swiper", {
+    autoplay: {
+    delay: 9000,
+    },
+    loop: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+  });
