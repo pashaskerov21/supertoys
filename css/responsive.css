@@ -11,6 +11,7 @@
     .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(3){left: 5%;}
     .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(6){right: 5%;}
     .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(7){right: 5%;}
+    .cp-image-sm img{width: 96px; height: 96px;}
     
 }
 @media only screen and (min-width: 768px){
@@ -21,6 +22,7 @@
     .swiper-button-prev, .swiper-button-next{width: 40px;height: 40px;}
     .product-card.new{width: 85%;}
     .kampaniya-products-swiper .product-card{width: 80%;}
+    .cp-image-lg{width: 80%;}
     
 }
 @media only screen and (min-width: 992px){
