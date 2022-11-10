@@ -24,16 +24,16 @@ for(let i = 0; i < productColorButtons.length; i++){
     })(i);
 }
 // PRODUCT NUMBER COUNTER
-let decrementButton = document.querySelector(".cp-counter .decrement-button");
+let decButton = document.querySelector(".cp-counter .decrement-button");
 let productNumberSpan = document.querySelector(".cp-counter .cp-number");
 let productNumberSpanValue = parseInt(productNumberSpan.innerHTML); 
-let incrementButton = document.querySelector(".cp-counter .increment-button");
+let incButton = document.querySelector(".cp-counter .increment-button");
 
-incrementButton.addEventListener("click",function(){
+incButton.addEventListener("click",function(){
     productNumberSpanValue += 1;
     productNumberSpan.innerHTML = productNumberSpanValue;
 });
-decrementButton.addEventListener("click",function(){
+decButton.addEventListener("click",function(){
     
     if(productNumberSpanValue == 1){
         productNumberSpanValue -= 0;

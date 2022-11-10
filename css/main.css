@@ -320,11 +320,11 @@ section{width: 100%;margin: 50px 0; padding: 40px 0;}
 /*PAGE NAVİGATİON LİNKS*/
 .page-navigation-links{
     width: 100%;
-    color: var(--black-4);
     padding-top: 30px;
 }
 .page-navigation-links a{font-size: var(--fs-5);color: var(--black-4);}
 .page-navigation-links i{font-size: var(--fs-3);color: var(--black-4);padding: 0 7px;}
+.page-navigation-links h3{padding: 10px 0;}
 
 
 
@@ -977,3 +977,67 @@ footer .footer-bottom p span{padding: 5px;}
     margin-bottom: 40px;
 }
 .comment-wrapper p{padding: 10px;}
+
+
+/*-------------SEBET 1------------*/
+.sebet-table-wrapper{
+    width: 100%;
+    overflow-y: auto;
+    margin: 20px 0 50px;
+}
+.sebet-table-wrapper::-webkit-scrollbar{width: 8px;}
+.sebet-table-wrapper::-webkit-scrollbar-thumb{background-color: var(--bg-color-1);}
+.sebet-table-wrapper::-webkit-scrollbar-track{background-color: var(--bg-color-6);}
+.sebet-table{
+    width: 100%;
+    margin: 30px 0;
+    min-width: 1000px;
+}
+.sebet-table tr{
+    border-bottom: 1px solid var(--black-2);
+}
+.sebet-table th, td{
+    padding: 10px 0;
+    text-align: center;
+}
+.name-cell span{
+    font-size: var(--fs-8);
+    font-weight: 500;
+}
+
+.image-cell img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.price-cell span{
+    font-size: var(--fs-6);
+    font-weight: 700;
+}
+.counter-cell .cp-counter{
+    width: 100%;
+}
+.total-price-cell span{
+    font-size: var(--fs-6);
+    font-weight: 700;
+}
+.total-sum-panel span{
+    display: inline-block;
+    min-width: 100px;
+    text-align: end;
+}
+.total-sum-panel .price{
+    font-weight: 700;
+}
+.total-sum-panel .title.total{
+    font-size: var(--fs-6);
+    font-weight: 700;
+}
+.confirm-button{
+    background-color: var(--bg-color-1);
+    color: var(--text-color-5);
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 5px;
+}
