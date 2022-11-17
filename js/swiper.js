@@ -105,3 +105,20 @@ const swiper2 = new Swiper(".child-age-swiper", {
     clickable: true,
     },
   });
+
+  const swiper8 = new Swiper(".image-sm-swiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const swiper9 = new Swiper(".image-lg-swiper", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper8,
+    },
+  });
