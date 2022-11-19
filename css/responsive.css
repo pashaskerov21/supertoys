@@ -1,20 +1,21 @@
 @media only screen and (min-width: 360px){
     .teklif-section .hover-absolute-div .toys-panel{width: 90%;}
 }
-@media only screen and (min-width: 540px){
+@media only screen and (min-width: 576px){
     .mobile-header .supertoys-logo{width: 90%;}
     .mobile-header .search-input{width: 70%;}
     footer .supertoys-logo{width: 70%;}
-    .supertoys-product-card{width: 60%;}
-    .teklif-section .hover-absolute-div .toys-panel img{width: 70px;height: 70px;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(2){left: 5%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(3){left: 5%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(6){right: 5%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(7){right: 5%;}
+
+    
     .product-card.sezon-lg{width: 95%;}
     .product-card.sezon-sm{width: 95%;}
     .product-card.sezon-sm .product-image img{width: 70px;height: 70px;}
     .cp-image-sm img{width: 96px; height: 96px;}
+
+    .form-button-wrapper{flex-direction: row;}
+    .form-button-wrapper button{width: 50%;}
+    .payment-cards{flex-direction: row;}
+
     
 }
 @media only screen and (min-width: 768px){
@@ -27,6 +28,8 @@
     .kampaniya-products-swiper .product-card{width: 80%;}
     .cp-image-lg{width: 80%;}
     .product-description .desc-image{width: 100%;}
+    .basket-products-wrapper .products{overflow: visible;}
+    .basket-products-wrapper .product-row{margin-left: 0; min-width: auto;}
     
 }
 @media only screen and (min-width: 992px){
@@ -35,27 +38,16 @@
     .swiper-pagination-bullet{width: 15px; height: 15px;}
     .white-toy-design{width: auto; height: auto;}
     .product-card.new{width: 93%;}
-    .teklif-section .hover-absolute-div .toys-panel img{width: 90px;height: 90px;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(3){left: 15%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(4){top: 60%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(5){right: 10%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(6){top: 40%;right: 20%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(7){top: 40%;right: 0;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(8){right: 10%;}
 }
 @media only screen and (min-width:1200px){
     .bottom-navbar-col img{padding: 0 10px;}
     .bottom-navbar-col a{font-size: var(--fs-5);}
     .teklif-section .content{padding: 50px 0;}
-    .teklif-section .hover-absolute-div .toys-panel img{width: auto;height: auto;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(1){top: 5%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(2){left: 15%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(3){left: 27%;}
-    .teklif-section .hover-absolute-div .toys-panel img:nth-of-type(4){top: 50%; left: 5%;}
 }
 @media only screen and (min-width:1400px){
     .bottom-navbar-col img{padding: 0 15px;}
     .bottom-navbar-col a{font-size: var(--fs-6);}
+    .teklif-section{background-size: contain;}
 }
 @media only screen and (min-width:1800px){
     .bottom-navbar-col a{font-size: var(--fs-9);}
